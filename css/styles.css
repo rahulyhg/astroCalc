@@ -1,0 +1,110 @@
+/* resets the navigator */
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+	
+	font-family: "sans-serif";
+	color: #555;
+}
+
+td{
+	padding: 1%;
+}
+
+/* configures the operation class */
+.operation{
+	width: 100%;
+}
+
+ #eqName{
+	font-size: 3em;
+	text-transform: uppercase;
+	
+	margin: 1.5%;
+}
+
+/* configures the equation class */
+.equation{
+	font-size: 2.5em;
+	text-align: center;
+	
+	width: 50%;
+}
+
+/* configures the division formated class */
+.division{
+	border-top: solid 0.1em #555;
+}
+
+span{
+	display: inline-block;
+	padding: 0 10%;
+}
+
+/* configures the description class */
+.description{
+	font-size: 1em;
+	text-align: justify;
+	
+	border-left: solid 0.25em #222;
+	
+	padding: 1%;
+	margin: 1%;
+}
+
+/* configures the values class */
+.values{
+	width: 100%;
+	text-align: center;
+}
+
+/* configures the fields of value class */
+.varName, .cnstName{
+	width: 15%;
+	font-size: 2em;
+}
+
+.varUnity, .cnstUnity{
+	width: 15%;
+	font-size: 1.5em;
+}
+
+.varValue, .cnstValue{
+	width: auto;
+}
+
+/* configures the inputs */
+.variableArea, .constantArea{
+	width: 100%;
+	font-size: 2em;
+	text-align: center;
+	border-bottom: solid 0.1em #555;
+}
+
+.constantArea{
+	border-bottom: none;
+}
+
+.btnCalc{
+	width: 32.5%;
+	padding: 1.5%;
+	margin: 2.5% 0 2.5% 1%;
+	
+	font-size: 2.5em; 
+	background: #222;
+	color: #ddd;
+}
+
+/***
+/* here ends the default configuration
+/* ...
+/* and begins the basic css pseudoclass and events
+***/
+
+/* configures the inputs actives */
+.variableArea:focus{
+	border-bottom: solid 0.15em #55a;
+	
+	outline: none;
+}

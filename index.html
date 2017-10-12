@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="./css/styles.css" rel="stylesheet">
+    <script src="./js/scripts.js"></script>
+  </head>
+  <body onload="loadPage()">
+
+    <div class="operation">
+		<h2 id="eqName">Schwarzschild Radius</h2>
+		
+		<table class="equation">
+		  <tr>
+			<td rowspan=2>R<sub>S</sub></td>
+			<td rowspan=2>=</td>
+			<td>2Gm</td>
+		  </tr>
+		  <tr>
+			<td class="division">c<sup>2</sup></td>
+		  </tr>
+		</table>
+		
+		<p class="description">This equation allows calculate the event horizon of a Schwarzschild's black hole with mass <em>m</em></p>
+		
+		<table class="values">
+		  <tr class="variable">
+			<td class="varName">R<sub>S</sub></td>
+			<td class="varValue"><input type="text" class="variableArea" id="SchwRadius"/></td>
+			<td class="varUnity">m</td>
+		  </tr>
+		  
+		  <tr class="variable">
+			<td class="varName">m</td>
+			<td class="varValue"><input type="text" class="variableArea" id="ScwhMass"/></td>
+			<td class="varUnity">kg</td>
+		  </tr>
+		  
+		  <tr class="constant">
+			<td class="cnstName">c</td>	
+			
+			<td class="cnstValue"><input type="text" class="constantArea" id="LightSpeed" readonly value="3.0E+8"/></td>
+			<td class="cnstUnity">m<br/><span class="division">s</span></td>
+		  </tr>
+		  
+		  <tr class="constant">
+			<td class="cnstName">G</td>
+			<td class="cnstValue"><input type="text" class="constantArea" id="GravConstant" readonly value="6.67E-11"/></td>
+			<td class="cnstUnity">N*m<sup>2</sup><br/><span class="division">kg<sup>2</sup></span></td>
+		  </tr>
+		</table>
+		
+		<input type="button" value="Calculate" class="btnCalc" onclick="calculate(1)()"/>
+	  </div>
+	  
+	  <div class="operation">
+		<h2 id="eqName">Universal Gravitation</h2>
+		
+		<table class="equation">
+		  <tr>
+			<td rowspan=2>F<sub>G</sub></td>
+			<td rowspan=2>=</td>
+			<td rowspan=2>G</td>
+			<td>M<sub>1</sub>M<sub>2</sub></td>
+		  </tr>
+		  <tr>
+			<td class="division">r<sup>2</sup></td>
+		  </tr>
+		</table>
+		
+		<p class="description">This equation allows calculate the gravitational force of attraction between two bodies with masses <em>M<sub>1</sub></em> and <em>M<sub>2</sub></em></p>
+		
+		<table class="values">
+		  <tr class="variable">
+			<td class="varName">F<sub>G</sub></td>
+			<td class="varValue"><input type="text" class="variableArea" id="GravForce"/></td>
+			<td class="varUnity">N</td>
+		  </tr>
+		  
+		  <tr class="variable">
+			<td class="varName">M<sub>1</sub></td>
+			<td class="varValue"><input type="text" class="variableArea" id="GravMass1"/></td>
+			<td class="varUnity">kg</td>
+		  </tr>
+		  
+		  <tr class="variable">
+			<td class="varName">M<sub>2</sub></td>
+			<td class="varValue"><input type="text" class="variableArea" id="GravMass2"/></td>
+			<td class="varUnity">kg</td>
+		  </tr>
+		 
+		  <tr class="variable">
+			<td class="varName">r</td>
+			<td class="varValue"><input type="text" class="variableArea" id="GravRadius"/></td>
+			<td class="varUnity">m</td>
+		  </tr>
+		  
+		  <tr class="constant">
+			<td class="cnstName">G</td>
+			<td class="cnstValue"><input type="text" class="constantArea" id="GravConstant" readonly value="6.67E-11"/></td>
+			<td class="cnstUnity">N*m<sup>2</sup><br/><span class="division">kg<sup>2</sup></span></td>
+		  </tr>
+		</table>
+		
+		<input type="button" value="Calculate" class="btnCalc" onclick="calculate(2)"/>
+	  </div>
+
+  </body>
+</html>		
